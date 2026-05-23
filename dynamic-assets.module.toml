@@ -1,0 +1,25 @@
+id = "dynamic-assets"
+name = "Dynamic Assets"
+version = "0.1.0"
+module_api = "1"
+description = "Asset-side prepare metadata and future dynamic asset integration support."
+
+[source]
+repo = "https://github.com/Dynamic-Modules/Dynamic-Assets.git"
+default_branch = "main"
+
+[compat]
+target = "tgstation"
+minimum_dynamic_modules = "0.2.0"
+
+[build]
+dm_files = []
+test_files = []
+assets = []
+tgui = []
+
+[[prepare_plugins]]
+id = "dynamic-assets-index"
+command = "python3"
+args = ["prepare_plugin.py"]
+description = "Writes an asset metadata index from module build.assets declarations."
