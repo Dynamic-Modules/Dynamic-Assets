@@ -1,8 +1,8 @@
 id = "dynamic-assets"
 name = "Dynamic Assets"
-version = "0.1.0"
+version = "1.0.0"
 module_api = "1"
-description = "Asset-side prepare metadata and future dynamic asset integration support."
+description = "Asset-side prepare metadata and dynamic asset contribution indexing support."
 
 [source]
 repo = "https://github.com/Dynamic-Modules/Dynamic-Assets.git"
@@ -10,7 +10,7 @@ default_branch = "main"
 
 [compat]
 target = "tgstation"
-minimum_dynamic_modules = "0.2.0"
+minimum_dynamic_modules = "1.0.0"
 
 [build]
 dm_files = []
